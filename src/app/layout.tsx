@@ -11,7 +11,7 @@ import Navbar from "@/components/ui/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Your Name | Software Developer",
+  title: "Sandro Dezerio | Software Developer",
   description: "Helping businesses digitalize daily tasks.",
 };
 
@@ -31,7 +31,7 @@ export default async function RootLayout({
       <body className={`${inter.className} bg-white dark:bg-gray-900`}>
         <NextIntlClientProvider messages={messages}>
           <Navbar />
-          {children}
+          <div className="min-h-screen">{children}</div>
         </NextIntlClientProvider>
       </body>
     </html>

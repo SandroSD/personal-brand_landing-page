@@ -6,6 +6,7 @@ import { useState, useEffect, useTransition } from "react";
 import { useTranslations } from "next-intl";
 import { setUserLocale } from "@/services/locale";
 import { Locale } from "@/i18n/config";
+import Link from "next/link";
 
 export default function Navbar() {
   const t = useTranslations("navbar");
@@ -32,11 +33,43 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white dark:bg-gray-900 shadow-md py-4">
+    <nav className="bg-white dark:bg-gray-900 shadow-md py-4 fixed w-full top-0 z-50">
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <span className="text-xl font-bold text-gray-800 dark:text-gray-50">
-          {t("home")}
-        </span>
+        {/* Links to Sections */}
+        <div className="flex items-center gap-4">
+          <Link
+            href="/"
+            className="text-gray-800 dark:text-gray-50 hover:text-blue-600"
+          >
+            {t("home")}
+          </Link>
+          <Link
+            href="/about"
+            className="text-gray-800 dark:text-gray-50 hover:text-blue-600"
+          >
+            {t("about")}
+          </Link>
+          <Link
+            href="/services"
+            className="text-gray-800 dark:text-gray-50 hover:text-blue-600"
+          >
+            {t("services")}
+          </Link>
+          <Link
+            href="/portfolio"
+            className="text-gray-800 dark:text-gray-50 hover:text-blue-600"
+          >
+            {t("portfolio")}
+          </Link>
+          <Link
+            href="/contact"
+            className="text-gray-800 dark:text-gray-50 hover:text-blue-600"
+          >
+            {t("contact")}
+          </Link>
+        </div>
+
+        {/* Language and Theme Toggles */}
         <div className="flex items-center gap-4">
           <button
             onClick={toggleLanguage}

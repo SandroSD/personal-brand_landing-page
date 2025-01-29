@@ -11,7 +11,7 @@ export default function Hero() {
   const t = useTranslations("hero");
 
   return (
-    <section className="bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 py-20">
+    <section className="h-screen flex flex-col justify-center items-center bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 pt-16">
       <div className="container mx-auto px-6 text-center">
         {/* Profile Photo */}
         <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full border-4 border-blue-600 dark:border-blue-800 shadow-lg">
@@ -19,7 +19,7 @@ export default function Hero() {
             src={me}
             height={100}
             width={100}
-            alt="Sandro Dezerio"
+            alt="Your Name"
             className="w-full h-full object-cover"
           />
         </div>
@@ -34,7 +34,7 @@ export default function Hero() {
 
         {/* Call-to-Action Button */}
         <Link
-          href="#contact"
+          href="/about" // Link to the About page
           className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition duration-300 transform hover:scale-105"
         >
           {t("cta")}
