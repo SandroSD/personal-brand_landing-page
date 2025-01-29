@@ -1,0 +1,17 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "services": "Servicios",
+    "portfolio": "Portafolio",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "toggleLanguage": "English",
+    "toggleTheme": "Cambiar Tema"
+  },
+  "hero": {
+    "title": "Tu Nombre",
+    "subtitle": "Desarrollador de Software | Ayudando a Empresas a Digitalizar Tareas Diarias",
+    "cta": "Trabaja Conmigo"
+  }
+}
