@@ -4,7 +4,6 @@
     "about": "Sobre Mí",
     "services": "Servicios",
     "portfolio": "Portafolio",
-    "blog": "Blog",
     "contact": "Contacto",
     "toggleLanguage": "English",
     "toggleTheme": "Cambiar Tema"
@@ -13,5 +12,83 @@
     "title": "Tu Nombre",
     "subtitle": "Desarrollador de Software | Ayudando a Empresas a Digitalizar Tareas Diarias",
     "cta": "Trabaja Conmigo"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "description": "Soy un desarrollador de software apasionado con un enfoque en ayudar a las empresas a digitalizar sus tareas diarias. Con años de experiencia en la creación de soluciones escalables y eficientes, me especializo en tecnologías como Next.js, Tailwind CSS y Node.js.",
+    "skillsTitle": "Habilidades",
+    "skills": [
+      "Desarrollo Web",
+      "Automatización de Procesos",
+      "Soluciones de Comercio Electrónico",
+      "Integración de APIs",
+      "Computación en la Nube"
+    ],
+    "experienceTitle": "Experiencia",
+    "experience": [
+      {
+        "title": "Desarrollador de Software",
+        "company": "Tech Solutions Inc.",
+        "duration": "2020 - Presente",
+        "description": "Desarrollé y mantuve aplicaciones web para clientes en diversas industrias."
+      },
+      {
+        "title": "Desarrollador Freelance",
+        "company": "Autónomo",
+        "duration": "2018 - 2020",
+        "description": "Trabajé con pequeñas empresas para crear soluciones de software personalizadas."
+      }
+    ]
+  },
+  "services": {
+    "title": "Servicios",
+    "description": "Ofrezco una variedad de servicios para ayudar a las empresas a digitalizar sus operaciones y mejorar la eficiencia. Aquí hay algunos de los servicios que ofrezco:",
+    "servicesList": [
+      {
+        "title": "Desarrollo de Software Personalizado",
+        "description": "Soluciones de software a medida para satisfacer las necesidades de su negocio."
+      },
+      {
+        "title": "Automatización de Procesos",
+        "description": "Automatice tareas repetitivas para ahorrar tiempo y reducir errores."
+      },
+      {
+        "title": "Soluciones de Comercio Electrónico",
+        "description": "Construya y optimice tiendas en línea para aumentar las ventas."
+      },
+      {
+        "title": "Integración de APIs",
+        "description": "Integre APIs de terceros en sus sistemas de manera fluida."
+      },
+      {
+        "title": "Computación en la Nube",
+        "description": "Migre y gestione sus aplicaciones en la nube."
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Portafolio",
+    "description": "Actualmente estoy trabajando en algunos proyectos emocionantes. ¡Vuelve pronto para ver mi trabajo!",
+    "comingSoon": "Próximamente"
+  },
+  "contact": {
+    "title": "Contáctame",
+    "description": "¿Tienes una pregunta o quieres trabajar juntos? ¡No dudes en contactarme!",
+    "form": {
+      "title": "Envíame un Mensaje",
+      "name": "Nombre",
+      "email": "Correo Electrónico",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje"
+    },
+    "contactInfo": {
+      "title": "Conectemos",
+      "email": "Correo Electrónico",
+      "socialMedia": "Sígueme",
+      "emailLink": "tu.correo@ejemplo.com",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "twitter": "Twitter"
+    }
   }
 }

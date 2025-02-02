@@ -4,14 +4,91 @@
     "about": "About",
     "services": "Services",
     "portfolio": "Portfolio",
-    "blog": "Blog",
     "contact": "Contact",
     "toggleLanguage": "Español",
     "toggleTheme": "Toggle Theme"
   },
   "hero": {
-    "title": "Sandro Dezerio",
+    "title": "Your Name",
     "subtitle": "Software Developer | Helping Businesses Digitalize Daily Tasks",
     "cta": "Work With Me"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm a passionate software developer with a focus on helping businesses digitalize their daily tasks. With years of experience in building scalable and efficient solutions, I specialize in technologies like Next.js, Tailwind CSS, and Node.js.",
+    "skillsTitle": "Skills",
+    "skills": [
+      "Web Development",
+      "Process Automation",
+      "E-commerce Solutions",
+      "API Integration",
+      "Cloud Computing"
+    ],
+    "experienceTitle": "Experience",
+    "experience": [
+      {
+        "title": "Software Developer",
+        "company": "Tech Solutions Inc.",
+        "duration": "2020 - Present",
+        "description": "Developed and maintained web applications for clients across various industries."
+      },
+      {
+        "title": "Freelance Developer",
+        "company": "Self-Employed",
+        "duration": "2018 - 2020",
+        "description": "Worked with small businesses to create custom software solutions."
+      }
+    ]
+  },
+  "services": {
+    "title": "Services",
+    "description": "I offer a range of services to help businesses digitalize their operations and improve efficiency. Here are some of the services I provide:",
+    "servicesList": [
+      {
+        "title": "Custom Software Development",
+        "description": "Tailored software solutions to meet your business needs."
+      },
+      {
+        "title": "Process Automation",
+        "description": "Automate repetitive tasks to save time and reduce errors."
+      },
+      {
+        "title": "E-commerce Solutions",
+        "description": "Build and optimize online stores to boost sales."
+      },
+      {
+        "title": "API Integration",
+        "description": "Seamlessly integrate third-party APIs into your systems."
+      },
+      {
+        "title": "Cloud Computing",
+        "description": "Migrate and manage your applications in the cloud."
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "I'm currently working on some exciting projects. Check back soon to see my work!",
+    "comingSoon": "Coming Soon"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "Have a question or want to work together? Feel free to reach out!",
+    "form": {
+      "title": "Send Me a Message",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message"
+    },
+    "contactInfo": {
+      "title": "Let's Connect",
+      "email": "Email",
+      "socialMedia": "Follow Me",
+      "emailLink": "your.email@example.com",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "twitter": "Twitter"
+    }
   }
 }
