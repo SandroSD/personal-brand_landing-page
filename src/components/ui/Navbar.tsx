@@ -1,16 +1,17 @@
-// app/components/ui/Navbar.tsx
 "use client";
 
 import { useState, useEffect, useTransition } from "react";
-//import { useRouter } from "next/router";
+
+import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
-import { setUserLocale } from "@/services/locale";
-import { Locale } from "@/i18n/config";
 import Link from "next/link";
+
+import { Locale } from "@/i18n/config";
+import { setUserLocale } from "@/services/locale";
 
 export default function Navbar() {
   const t = useTranslations("navbar");
-  //const { pathname } = useRouter();
+  const pathname = usePathname();
 
   const [isPending, startTransition] = useTransition();
   const [darkMode, setDarkMode] = useState(false);
@@ -32,6 +33,8 @@ export default function Navbar() {
     });
   };
 
+  const isActive = (path: string) => pathname === path;
+
   return (
     <nav className="bg-white dark:bg-gray-900 shadow-md py-4 fixed w-full top-0 z-50">
       <div className="container mx-auto px-6 flex justify-between items-center">
@@ -39,31 +42,41 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <Link
             href="/"
-            className="text-gray-800 dark:text-gray-50 hover:text-blue-600"
+            className={`text-gray-800 dark:text-gray-200 hover:text-blue-500 transition duration-300 ${
+              isActive("/") ? "text-blue-500 font-bold" : ""
+            }`}
           >
             {t("home")}
           </Link>
           <Link
             href="/about"
-            className="text-gray-800 dark:text-gray-50 hover:text-blue-600"
+            className={`text-gray-800 dark:text-gray-200 hover:text-blue-500 transition duration-300 ${
+              isActive("/about") ? "text-blue-500 font-bold" : ""
+            }`}
           >
             {t("about")}
           </Link>
           <Link
             href="/services"
-            className="text-gray-800 dark:text-gray-50 hover:text-blue-600"
+            className={`text-gray-800 dark:text-gray-200 hover:text-blue-500 transition duration-300 ${
+              isActive("/services") ? "text-blue-500 font-bold" : ""
+            }`}
           >
             {t("services")}
           </Link>
           <Link
             href="/portfolio"
-            className="text-gray-800 dark:text-gray-50 hover:text-blue-600"
+            className={`text-gray-800 dark:text-gray-200 hover:text-blue-500 transition duration-300 ${
+              isActive("/portfolio") ? "text-blue-500 font-bold" : ""
+            }`}
           >
             {t("portfolio")}
           </Link>
           <Link
             href="/contact"
-            className="text-gray-800 dark:text-gray-50 hover:text-blue-600"
+            className={`text-gray-800 dark:text-gray-200 hover:text-blue-500 transition duration-300 ${
+              isActive("/contact") ? "text-blue-500 font-bold" : ""
+            }`}
           >
             {t("contact")}
           </Link>

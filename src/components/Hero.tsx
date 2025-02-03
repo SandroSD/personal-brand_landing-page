@@ -11,14 +11,14 @@ export default function Hero() {
   const t = useTranslations("hero");
 
   return (
-    <section className="h-screen flex flex-col justify-center items-center bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 pt-16">
+    <section className="h-screen flex flex-col justify-center items-center bg-gradient-to-b from-sky-50 to-white dark:from-gray-800 dark:to-gray-900 pt-16">
       <div className="container mx-auto px-6 text-center">
         {/* Profile Photo with Animation */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full border-4 border-blue-600 dark:border-blue-800 shadow-lg"
+          className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full border-4 border-sky-400 dark:border-blue-800 shadow-lg"
         >
           <Image
             src={me}
@@ -57,7 +57,7 @@ export default function Hero() {
         >
           <Link
             href="/about"
-            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition duration-300 transform hover:scale-105"
+            className="inline-block bg-sky-400 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition duration-300 transform hover:scale-105"
           >
             {t("cta")}
           </Link>

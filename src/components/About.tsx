@@ -34,7 +34,7 @@ export default function About() {
             {t.raw("skills").map((skill: string, index: number) => (
               <div
                 key={index}
-                className="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold"
+                className="bg-sky-400 text-white px-6 py-3 rounded-full text-lg font-semibold"
               >
                 {skill}
               </div>

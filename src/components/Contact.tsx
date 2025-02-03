@@ -27,21 +27,21 @@ export default function Contact() {
   };
 
   return (
-    <section className="h-screen flex flex-col justify-center items-center bg-white dark:bg-gray-900 pt-16">
+    <section className="h-screen flex flex-col justify-center items-center bg-gradient-to-b from-sky-50 to-white dark:from-gray-800 dark:to-gray-900 pt-16">
       <div className="container mx-auto px-6">
         {/* Title */}
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-50 mb-8 text-center">
+        <h1 className="text-5xl font-bold text-gray-800 dark:text-gray-50 mb-8 text-center">
           {t("title")}
         </h1>
 
         {/* Description */}
-        <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-12 text-center max-w-3xl mx-auto">
+        <p className="text-xl text-gray-600 dark:text-gray-300 mb-12 text-center max-w-3xl mx-auto">
           {t("description")}
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+          <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-50 mb-6">
               {t("form.title")}
             </h2>
@@ -59,7 +59,7 @@ export default function Contact() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400"
                   required
                 />
               </div>
@@ -76,7 +76,7 @@ export default function Contact() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400"
                   required
                 />
               </div>
@@ -93,13 +93,13 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   rows={5}
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400"
                   required
                 />
               </div>
               <button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition duration-300"
+                className="w-full bg-sky-400 hover:bg-sky-500 text-white font-semibold px-6 py-3 rounded-lg transition duration-300"
               >
                 {t("form.submit")}
               </button>
@@ -107,7 +107,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Information */}
-          <div className="bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+          <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-50 mb-6">
               {t("contactInfo.title")}
             </h2>
@@ -119,7 +119,7 @@ export default function Contact() {
                 </h3>
                 <a
                   href={`mailto:${t("contactInfo.emailLink")}`}
-                  className="text-blue-600 hover:text-blue-700"
+                  className="text-sky-400 hover:text-sky-500"
                 >
                   {t("contactInfo.emailLink")}
                 </a>
@@ -135,7 +135,7 @@ export default function Contact() {
                     href="https://linkedin.com/in/your-profile"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-800 dark:text-gray-200 hover:text-blue-600 transition duration-300"
+                    className="text-gray-800 dark:text-gray-200 hover:text-sky-400 transition duration-300"
                   >
                     {t("contactInfo.linkedin")}
                   </a>
@@ -143,7 +143,7 @@ export default function Contact() {
                     href="https://github.com/your-profile"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-800 dark:text-gray-200 hover:text-blue-600 transition duration-300"
+                    className="text-gray-800 dark:text-gray-200 hover:text-sky-400 transition duration-300"
                   >
                     {t("contactInfo.github")}
                   </a>
@@ -151,7 +151,7 @@ export default function Contact() {
                     href="https://twitter.com/your-profile"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-800 dark:text-gray-200 hover:text-blue-600 transition duration-300"
+                    className="text-gray-800 dark:text-gray-200 hover:text-sky-400 transition duration-300"
                   >
                     {t("contactInfo.twitter")}
                   </a>

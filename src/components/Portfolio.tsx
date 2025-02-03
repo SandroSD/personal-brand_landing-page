@@ -19,7 +19,7 @@ export default function Portfolio() {
         </p>
 
         {/* Coming Soon Message */}
-        <div className="bg-blue-600 text-white px-8 py-4 rounded-full text-2xl font-bold">
+        <div className="bg-sky-400 text-white px-8 py-4 rounded-full text-2xl font-bold">
           {t("comingSoon")}
         </div>
       </div>
