@@ -1,20 +1,27 @@
+// app/components/Services.tsx
 "use client";
 
 import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
 
 export default function Services() {
   const t = useTranslations("services");
 
   return (
-    <section className="h-screen flex flex-col justify-center items-center bg-white dark:bg-gray-900 pt-16">
+    <motion.section
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="h-screen flex flex-col justify-center items-center bg-white dark:bg-gray-900 pt-16"
+    >
       <div className="container mx-auto px-6">
         {/* Title */}
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-50 mb-8 text-center">
+        <h1 className="text-5xl font-bold text-gray-800 dark:text-gray-50 mb-8 text-center">
           {t("title")}
         </h1>
 
         {/* Description */}
-        <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-12 text-center max-w-3xl mx-auto">
+        <p className="text-xl text-gray-600 dark:text-gray-300 mb-12 text-center max-w-3xl mx-auto">
           {t("description")}
         </p>
 
@@ -27,8 +34,11 @@ export default function Services() {
                 service: { title: string; description: string },
                 index: number,
               ) => (
-                <div
+                <motion.div
                   key={index}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
                   className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg"
                 >
                   <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-50 mb-4">
@@ -37,11 +47,11 @@ export default function Services() {
                   <p className="text-gray-600 dark:text-gray-300">
                     {service.description}
                   </p>
-                </div>
+                </motion.div>
               ),
             )}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
