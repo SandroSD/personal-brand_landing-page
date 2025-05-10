@@ -9,8 +9,9 @@
     "toggleTheme": "Toggle Theme"
   },
   "hero": {
-    "title": "Your Name",
-    "subtitle": "Software Developer | Helping Businesses Digitalize Daily Tasks",
+    "title": "Sandro Dezerio",
+    "subtitle": "Software Engineer | Transforming Ideas into Functional, Impactful Software",
+    "description": "Experienced in building end-to-end systems and guiding teams through technical challenges. I'm committed to continuous learning, clear communication, and empowering others.",
     "cta": "Work With Me"
   },
   "about": {
