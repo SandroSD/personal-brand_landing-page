@@ -4,6 +4,8 @@
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 
+import Skills from "./Skills";
+
 export default function About() {
   const t = useTranslations("about");
 
@@ -12,7 +14,7 @@ export default function About() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="h-screen flex flex-col justify-center items-center bg-white dark:bg-gray-900 pt-16"
+      className="h-auto flex flex-col justify-center items-center bg-white dark:bg-gray-900 pt-32"
     >
       <div className="container mx-auto px-6">
         {/* Title */}
@@ -21,12 +23,70 @@ export default function About() {
         </h1>
 
         {/* Description */}
-        <p className="text-xl text-gray-600 dark:text-gray-300 mb-12 text-center max-w-3xl mx-auto">
-          {t("description")}
-        </p>
+        <div className="text-xl text-gray-600 dark:text-gray-300 text-center max-w-8xl mx-auto">
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="mb-12"
+          >
+            {t("description.p1")}
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            className="mb-12"
+          >
+            {t("description.p2")}
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9 }}
+            className="mb-12"
+          >
+            {t("description.p3")}
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.1 }}
+            className="mb-12"
+          >
+            {t("description.p4")}
+          </motion.p>
+        </div>
 
+        <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-50 mb-6 text-center">
+          {t("skillsTitle")}
+        </h2>
+        <Skills skills={t.raw("skills")} />
+
+        {/*<div className="flex flex-wrap justify-center gap-4 mb-12">
+          {t
+            .raw("skills")
+            .map((skill: Record<string, string[]>, index: number) => (
+              <div
+                key={index}
+                className="bg-sky-400 text-white px-6 py-3 rounded-full text-lg font-semibold"
+              >
+                {Object.entries(skill).map(([key, value]) => (
+                  <div key={key} className="mb-2">
+                    {key}: {value.join(", ")}
+                  </div>
+                ))}
+              </div>
+            ))}
+        </div>*/}
+        {/*<Image
+          src="/icons/firebase.svg"
+          alt="Sandro Dezerio"
+          width={480}
+          height={480}
+        />*/}
         {/* Skills */}
-        <div className="mb-12">
+        {/* <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-50 mb-6 text-center">
             {t("skillsTitle")}
           </h2>
@@ -40,10 +100,10 @@ export default function About() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Experience */}
-        <div>
+        {/*<div>
           <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-50 mb-6 text-center">
             {t("experienceTitle")}
           </h2>
@@ -75,7 +135,7 @@ export default function About() {
               ),
             )}
           </div>
-        </div>
+        </div>*/}
       </div>
     </motion.section>
   );

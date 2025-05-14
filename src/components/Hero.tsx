@@ -2,10 +2,10 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import Image from "next/image";
 
 import me from "../../public/me.png";
+import LinkCTA from "./ui/LinkCTA";
 
 export default function Hero() {
   const t = useTranslations("hero");
@@ -64,12 +64,7 @@ export default function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <Link
-            href="/contact"
-            className="inline-block bg-sky-400 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition duration-300 transform hover:scale-105"
-          >
-            {t("cta")}
-          </Link>
+          <LinkCTA />
         </motion.div>
       </div>
     </section>
