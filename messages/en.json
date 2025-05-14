@@ -16,14 +16,88 @@
   },
   "about": {
     "title": "About Me",
-    "description": "I'm a passionate software developer with a focus on helping businesses digitalize their daily tasks. With years of experience in building scalable and efficient solutions, I specialize in technologies like Next.js, Tailwind CSS, and Node.js.",
-    "skillsTitle": "Skills",
+    "description": {
+      "p1": "Hi, I'm Sandro Dezerio, a passionate software engineer with 8 years of experience building complete digital solutions. My journey in tech has taken me from freelance projects to leading teams in established companies, always driven by a love for problem-solving and innovation.",
+      "p2": "I believe in the power of teamwork, clear communication, and continuous learning. Whether I'm mentoring junior developers or collaborating with cross-functional teams, I strive to create an environment where everyone can grow and succeed.",
+      "p3": "My approach blends technical expertise with a focus on real-world impact. I enjoy transforming ideas into functional, impactful software that helps businesses automate, innovate, and thrive.",
+      "p4": "When I'm not coding, you'll find me exploring new technologies, sharing knowledge with the community, or enjoying time outdoors."
+    },
+    "skillsTitle": "Technical Skills",
     "skills": [
-      "Web Development",
-      "Process Automation",
-      "E-commerce Solutions",
-      "API Integration",
-      "Cloud Computing"
+      {
+        "Programming Languages": [
+          { "tooltip": "Javascript", "icon": "javascript" },
+          { "tooltip": "Typescript", "icon": "typescript" },
+          { "tooltip": "Rust", "icon": "rust" },
+          { "tooltip": "PHP", "icon": "php" }
+        ]
+      },
+      {
+        "Frontend Frameworks / Libraries": [
+          { "tooltip": "React.js", "icon": "reactjs" },
+          { "tooltip": "Next.js", "icon": "nextjs" },
+          { "tooltip": "Redux", "icon": "redux" },
+          { "tooltip": "SASS", "icon": "sass" },
+          { "tooltip": "Tailwind CSS", "icon": "tailwindcss" },
+          { "tooltip": "Material UI", "icon": "materialui" },
+          { "tooltip": "Bootstrap", "icon": "bootstrap" },
+          { "tooltip": "jQuery", "icon": "jquery" },
+          { "tooltip": "React Hook Form", "icon": "reacthookform" }
+        ]
+      },
+      {
+        "Backend Frameworks / Libraries": [
+          { "tooltip": "Node.js", "icon": "nodejs" },
+          { "tooltip": "Express.js", "icon": "expressjs" },
+          { "tooltip": "Nest.js", "icon": "nestjs" }
+        ]
+      },
+      {
+        "Databases": [
+          { "tooltip": "MySQL", "icon": "mysql" },
+          { "tooltip": "SQL Server", "icon": "sqlserver" },
+          { "tooltip": "PostgreSQL", "icon": "postgresql" },
+          { "tooltip": "MongoDB", "icon": "mongodb" },
+          { "tooltip": "Redis", "icon": "redis" },
+          { "tooltip": "DynamoDB", "icon": "dynamodb" }
+        ]
+      },
+      {
+        "API Development": [
+          { "tooltip": "RESTful APIs", "icon": "" },
+          { "tooltip": "GraphQL", "icon": "" }
+        ]
+      },
+      {
+        "Cloud Technologies": [
+          { "tooltip": "AWS", "icon": "" },
+          { "tooltip": "Firebase", "icon": "" }
+        ]
+      },
+      {
+        "Tools": [
+          { "tooltip": "Git", "icon": "" },
+          { "tooltip": "GitHub", "icon": "" },
+          { "tooltip": "Bitbucket", "icon": "" },
+          { "tooltip": "Jira", "icon": "" },
+          { "tooltip": "Trello", "icon": "" },
+          { "tooltip": "Slack", "icon": "" },
+          { "tooltip": "Postman", "icon": "" }
+        ]
+      },
+      {
+        "CI/CD": [
+          { "tooltip": "GitHub Actions", "icon": "" },
+          { "tooltip": "Docker", "icon": "" }
+        ]
+      },
+      {
+        "Operating Systems": [
+          { "tooltip": "Windows", "icon": "" },
+          { "tooltip": "Linux", "icon": "" },
+          { "tooltip": "MacOS", "icon": "" }
+        ]
+      }
     ],
     "experienceTitle": "Experience",
     "experience": [

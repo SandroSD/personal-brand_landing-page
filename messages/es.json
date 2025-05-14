@@ -16,14 +16,88 @@
   },
   "about": {
     "title": "Sobre Mí",
-    "description": "Soy un desarrollador de software apasionado con un enfoque en ayudar a las empresas a digitalizar sus tareas diarias. Con años de experiencia en la creación de soluciones escalables y eficientes, me especializo en tecnologías como Next.js, Tailwind CSS y Node.js.",
-    "skillsTitle": "Habilidades",
+    "description": {
+      "p1": "Hola, soy Sandro Dezerio, un apasionado ingeniero de software con 8 años de experiencia construyendo soluciones digitales completas. Mi trayectoria en tecnología me ha llevado desde proyectos freelance hasta liderar equipos en empresas consolidadas, siempre impulsado por el amor a resolver problemas e innovar.",
+      "p2": "Creo en el poder del trabajo en equipo, la comunicación clara y el aprendizaje continuo. Ya sea mentoreando a desarrolladores junior o colaborando con equipos multifuncionales, me esfuerzo por crear un entorno donde todos puedan crecer y tener éxito.",
+      "p3": "Mi enfoque combina experiencia técnica con un énfasis en el impacto real. Disfruto transformando ideas en software funcional e impactante que ayuda a las empresas a automatizar, innovar y prosperar.",
+      "p4": "Cuando no estoy programando, me encontrarás explorando nuevas tecnologías, compartiendo conocimientos con la comunidad o disfrutando del aire libre."
+    },
+    "skillsTitle": "Habilidades Técnicas",
     "skills": [
-      "Desarrollo Web",
-      "Automatización de Procesos",
-      "Soluciones de Comercio Electrónico",
-      "Integración de APIs",
-      "Computación en la Nube"
+      {
+        "Lenguajes de Programación": [
+          { "tooltip": "Javascript", "icon": "javascript" },
+          { "tooltip": "Typescript", "icon": "typescript" },
+          { "tooltip": "Rust", "icon": "rust" },
+          { "tooltip": "PHP", "icon": "php" }
+        ]
+      },
+      {
+        "Librerías / Frameworks Frontend": [
+          { "tooltip": "React.js", "icon": "reactjs" },
+          { "tooltip": "Next.js", "icon": "nextjs" },
+          { "tooltip": "Redux", "icon": "redux" },
+          { "tooltip": "SASS", "icon": "sass" },
+          { "tooltip": "Tailwind CSS", "icon": "tailwindcss" },
+          { "tooltip": "Material UI", "icon": "materialui" },
+          { "tooltip": "Bootstrap", "icon": "bootstrap" },
+          { "tooltip": "jQuery", "icon": "jquery" },
+          { "tooltip": "React Hook Form", "icon": "reacthookform" }
+        ]
+      },
+      {
+        "Librerías / Frameworks Backend": [
+          { "tooltip": "Node.js", "icon": "nodejs" },
+          { "tooltip": "Express.js", "icon": "expressjs" },
+          { "tooltip": "Nest.js", "icon": "nestjs" }
+        ]
+      },
+      {
+        "Bases de Datos": [
+          { "tooltip": "MySQL", "icon": "mysql" },
+          { "tooltip": "SQL Server", "icon": "sqlserver" },
+          { "tooltip": "PostgreSQL", "icon": "postgresql" },
+          { "tooltip": "MongoDB", "icon": "mongodb" },
+          { "tooltip": "Redis", "icon": "redis" },
+          { "tooltip": "DynamoDB", "icon": "dynamodb" }
+        ]
+      },
+      {
+        "Desarrollo de APIs": [
+          { "tooltip": "RESTful APIs", "icon": "" },
+          { "tooltip": "GraphQL", "icon": "" }
+        ]
+      },
+      {
+        "Tecnologías en la Nube": [
+          { "tooltip": "AWS", "icon": "" },
+          { "tooltip": "Firebase", "icon": "" }
+        ]
+      },
+      {
+        "Herramientas": [
+          { "tooltip": "Git", "icon": "" },
+          { "tooltip": "GitHub", "icon": "" },
+          { "tooltip": "Bitbucket", "icon": "" },
+          { "tooltip": "Jira", "icon": "" },
+          { "tooltip": "Trello", "icon": "" },
+          { "tooltip": "Slack", "icon": "" },
+          { "tooltip": "Postman", "icon": "" }
+        ]
+      },
+      {
+        "CI/CD": [
+          { "tooltip": "GitHub Actions", "icon": "" },
+          { "tooltip": "Docker", "icon": "" }
+        ]
+      },
+      {
+        "Sistemas Operativos": [
+          { "tooltip": "Windows", "icon": "" },
+          { "tooltip": "Linux", "icon": "" },
+          { "tooltip": "MacOS", "icon": "" }
+        ]
+      }
     ],
     "experienceTitle": "Experiencia",
     "experience": [
