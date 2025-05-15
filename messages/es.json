@@ -117,27 +117,27 @@
   },
   "services": {
     "title": "Servicios",
-    "description": "Ofrezco una variedad de servicios para ayudar a las empresas a digitalizar sus operaciones y mejorar la eficiencia. Aquí hay algunos de los servicios que ofrezco:",
+    "description": "Ya sea que busques crear un nuevo producto, optimizar sistemas existentes o potenciar a tu equipo, ofrezco una gama de servicios diseñados para hacer realidad tus ideas y ayudar a que tu negocio prospere. Descubre cómo podemos trabajar juntos:",
     "servicesList": [
       {
-        "title": "Desarrollo de Software Personalizado",
-        "description": "Soluciones de software a medida para satisfacer las necesidades de su negocio."
+        "title": "Desarrollo Backend y Full-Stack",
+        "description": "Desde el diseño de bases de datos hasta interfaces de usuario intuitivas, desarrollo aplicaciones completas y escalables que resuelven desafíos reales de negocio y ofrecen experiencias de usuario fluidas."
       },
       {
-        "title": "Automatización de Procesos",
-        "description": "Automatice tareas repetitivas para ahorrar tiempo y reducir errores."
+        "title": "Diseño e Integración de APIs",
+        "description": "Creo APIs seguras y de alto rendimiento, e integro sistemas diversos para garantizar que tus aplicaciones se comuniquen de manera eficiente y confiable, tanto internamente como con terceros."
       },
       {
-        "title": "Soluciones de Comercio Electrónico",
-        "description": "Construya y optimice tiendas en línea para aumentar las ventas."
+        "title": "Mentoría Técnica y Revisión de Código",
+        "description": "Apoyo a los equipos compartiendo buenas prácticas, brindando retroalimentación accionable mediante revisiones de código y fomentando una cultura de calidad y mejora continua."
       },
       {
-        "title": "Integración de APIs",
-        "description": "Integre APIs de terceros en sus sistemas de manera fluida."
+        "title": "Consultoría de Arquitectura",
+        "description": "Analizo y optimizo la arquitectura de tus sistemas para mejorar el rendimiento, la escalabilidad y la confiabilidad, sentando una base sólida para el crecimiento e innovación futuros."
       },
       {
-        "title": "Computación en la Nube",
-        "description": "Migre y gestione sus aplicaciones en la nube."
+        "title": "Soluciones de Software a Medida para Empresas",
+        "description": "¿Aún no tienes software? Colaboro con empresas para transformar ideas en soluciones digitales personalizadas que automatizan procesos, aumentan la productividad y generan resultados."
       }
     ]
   },

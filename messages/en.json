@@ -117,27 +117,27 @@
   },
   "services": {
     "title": "Services",
-    "description": "I offer a range of services to help businesses digitalize their operations and improve efficiency. Here are some of the services I provide:",
+    "description": "Whether you're looking to build a new product, optimize existing systems, or empower your team, I offer a range of services designed to bring your ideas to life and help your business thrive. Explore how we can work together:",
     "servicesList": [
       {
-        "title": "Custom Software Development",
-        "description": "Tailored software solutions to meet your business needs."
+        "title": "Backend & Full-Stack Development",
+        "description": "From database design to intuitive user interfaces, I develop complete, scalable applications that solve real business challenges and deliver seamless user experiences."
       },
       {
-        "title": "Process Automation",
-        "description": "Automate repetitive tasks to save time and reduce errors."
+        "title": "API Design & Integration",
+        "description": "I craft secure, high-performance APIs and integrate disparate systems, ensuring your applications communicate efficiently and reliably-both internally and with third parties."
       },
       {
-        "title": "E-commerce Solutions",
-        "description": "Build and optimize online stores to boost sales."
+        "title": "Technical Mentorship & Code Reviews",
+        "description": "I support teams by sharing best practices, providing actionable feedback through code reviews, and fostering a culture of quality and continuous improvement."
       },
       {
-        "title": "API Integration",
-        "description": "Seamlessly integrate third-party APIs into your systems."
+        "title": "Architecture Consulting",
+        "description": "I analyze and refine your system architecture to enhance performance, scalability, and reliability-laying a solid foundation for future growth and innovation."
       },
       {
-        "title": "Cloud Computing",
-        "description": "Migrate and manage your applications in the cloud."
+        "title": "Custom Software Solutions for Businesses",
+        "description": "No software yet? I partner with businesses to turn ideas into tailored digital solutions that automate processes, boost productivity, and drive results."
       }
     ]
   },
