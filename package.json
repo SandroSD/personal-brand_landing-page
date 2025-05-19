@@ -19,6 +19,7 @@
     "next-intl": "4.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-vertical-timeline-component": "^3.5.3",
     "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
@@ -26,6 +27,7 @@
     "@types/node": "22.15.17",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/react-vertical-timeline-component": "^3.3.6",
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
     "postcss": "^8.5.1",

@@ -4,6 +4,7 @@
     "about": "Sobre Mí",
     "services": "Servicios",
     "portfolio": "Portafolio",
+    "experience": "Experiencia",
     "contact": "Contacto",
     "toggleLanguage": "English",
     "toggleTheme": "Cambiar Tema"
@@ -140,6 +141,9 @@
         "description": "¿Aún no tienes software? Colaboro con empresas para transformar ideas en soluciones digitales personalizadas que automatizan procesos, aumentan la productividad y generan resultados."
       }
     ]
+  },
+  "experience": {
+    "title": "Experiencia"
   },
   "portfolio": {
     "title": "Portafolio",

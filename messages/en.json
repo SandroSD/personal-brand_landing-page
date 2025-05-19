@@ -4,6 +4,7 @@
     "about": "About",
     "services": "Services",
     "portfolio": "Portfolio",
+    "experience": "Experience",
     "contact": "Contact",
     "toggleLanguage": "Español",
     "toggleTheme": "Toggle Theme"
@@ -138,6 +139,47 @@
       {
         "title": "Custom Software Solutions for Businesses",
         "description": "No software yet? I partner with businesses to turn ideas into tailored digital solutions that automate processes, boost productivity, and drive results."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "jobs": [
+      {
+        "title": "React and Node Developer",
+        "logo": "/experience/distillery.png",
+        "company": "Distillery",
+        "location": "Buenos Aires, Argentina",
+        "from": "06/2022",
+        "to": "03/2025",
+        "site": "https://distillery.com/"
+      },
+      {
+        "title": "Fullstack Developer",
+        "logo": "/experience/fpay.jpg",
+        "company": "FPay",
+        "location": "Buenos Aires, Argentina",
+        "from": "10/2021",
+        "to": "06/2022",
+        "site": "https://www.falabella.com/falabella-cl/page/F-Pay"
+      },
+      {
+        "title": "Fullstack Developer",
+        "logo": "/experience/soulit.png",
+        "company": "Soul IT Solutions - IT Services and Consulting",
+        "location": "Buenos Aires, Argentina",
+        "from": "05/2018",
+        "to": "10/2021",
+        "site": "https://www.soulit.io/"
+      },
+      {
+        "title": "Web Programmer and Fullstack Developer",
+        "logo": "/experience/union-personal.svg",
+        "company": "Unión Personal - Hospitals and Healthcare",
+        "location": "Buenos Aires, Argentina",
+        "from": "06/2017",
+        "to": "03/2018",
+        "site": "https://www.unionpersonal.com.ar/"
       }
     ]
   },

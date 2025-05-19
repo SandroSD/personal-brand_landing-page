@@ -64,13 +64,21 @@ export default function Navbar() {
           >
             {t("services")}
           </Link>
-          <Link
+          {/*<Link
             href="/portfolio"
             className={`text-gray-800 dark:text-gray-200 hover:text-blue-500 transition duration-300 ${
               isActive("/portfolio") ? "text-blue-500 font-bold" : ""
             }`}
           >
             {t("portfolio")}
+          </Link>*/}
+          <Link
+            href="/experience"
+            className={`text-gray-800 dark:text-gray-200 hover:text-blue-500 transition duration-300 ${
+              isActive("/experience") ? "text-blue-500 font-bold" : ""
+            }`}
+          >
+            {t("experience")}
           </Link>
           <Link
             href="/contact"
