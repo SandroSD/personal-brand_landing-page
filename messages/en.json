@@ -190,12 +190,15 @@
   },
   "contact": {
     "title": "Contact Me",
-    "description": "Have a question or want to work together? Feel free to reach out!",
+    "description": "I'm excited to connect with you! Fill out the form below and I'll get back to you as soon as possible.",
     "form": {
       "title": "Send Me a Message",
-      "name": "Name",
-      "email": "Email",
-      "message": "Message",
+      "field_fullname": "Full Name",
+      "field_email": "Email",
+      "field_subject": "Subject",
+      "field_message": "Message",
+      "field_phonenumber": "Phone Number",
+      "field_contactmethod": "Contact Method",
       "submit": "Send Message"
     },
     "contactInfo": {
