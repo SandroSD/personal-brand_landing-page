@@ -31,6 +31,7 @@ export default function Navbar() {
     startTransition(() => {
       setUserLocale(newLocale);
     });
+    console.log(isPending);
   };
 
   const isActive = (path: string) => pathname === path;

@@ -5,6 +5,10 @@ const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
   /* config options here */
+  /*output: "export",
+  images: {
+    loader: "custom",
+  },*/
 };
 
 export default withNextIntl(nextConfig);

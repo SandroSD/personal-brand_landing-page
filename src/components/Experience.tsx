@@ -13,6 +13,11 @@ import "react-vertical-timeline-component/style.min.css";
 const Experience = () => {
   const t = useTranslations("experience");
 
+  const [isHovered, setIsHovered] = useState(false);
+  const [experienceHovered, setExperienceHovered] = useState<number | null>(
+    null,
+  );
+
   return (
     <motion.section
       initial={{ opacity: 0, y: 50 }}
@@ -39,21 +44,33 @@ const Experience = () => {
               },
               index: number,
             ) => {
-              const [isHovered, setIsHovered] = useState(false);
-
               const Logo = (
                 <Image
                   src={experience.logo}
                   alt={experience.company}
+                  loader={({ src }) => {
+                    console.log("SRC: ", src);
+                    return src;
+                  }}
+                  unoptimized
                   width={50}
                   height={50}
                   className={`rounded-full transition-transform duration-300 ${
-                    isHovered ? "scale-110 rotate-6" : "scale-100"
+                    isHovered && experienceHovered === index
+                      ? "scale-110 rotate-6"
+                      : "scale-100"
                   }`}
-                  onMouseEnter={() => setIsHovered(true)}
-                  onMouseLeave={() => setIsHovered(false)}
+                  onMouseEnter={() => {
+                    setExperienceHovered(index);
+                    setIsHovered(true);
+                  }}
+                  onMouseLeave={() => {
+                    setExperienceHovered(null);
+                    setIsHovered(false);
+                  }}
                 />
               );
+
               return (
                 <VerticalTimelineElement
                   key={index}
@@ -67,7 +84,10 @@ const Experience = () => {
                     justifyContent: "center",
                     cursor: "pointer",
                     transition: "transform 0.3s ease",
-                    transform: isHovered ? "scale(1.2)" : "scale(1)",
+                    transform:
+                      isHovered && experienceHovered === index
+                        ? "scale(1.2)"
+                        : "scale(1)",
                   }}
                   contentStyle={{
                     background: "rgb(16, 24, 40)",

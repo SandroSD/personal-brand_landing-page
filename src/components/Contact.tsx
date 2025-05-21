@@ -2,30 +2,30 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+//import { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Contact() {
   const t = useTranslations("contact");
-  const [formData, setFormData] = useState({
+  /*const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
-  });
+  });*/
 
-  const handleChange = (
+  /*const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
-  };
+  };*/
 
-  const handleSubmit = (e: React.FormEvent) => {
+  /*const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission (e.g., send data to an API or email service)
     console.log("Form Data:", formData);
     alert("Message sent successfully!"); // Placeholder for actual submission logic
-  };
+  };*/
 
   return (
     <motion.section
@@ -142,7 +142,8 @@ export default function Contact() {
                 Send Message <span aria-hidden>🚀</span>
               </button>
               <p className="text-xs text-gray-400 mt-2">
-                Your information is safe with me. I'll never share your details.
+                Your information is safe with me. I will never share your
+                details.
               </p>
             </form>
 

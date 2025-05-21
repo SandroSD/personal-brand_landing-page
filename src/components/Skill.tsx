@@ -1,10 +1,10 @@
-import {
+/*import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import Image from "next/image";
+import Image from "next/image";*/
 
 const Skill = ({ skill }: { skill: { tooltip: string; icon: string } }) => {
   /**
