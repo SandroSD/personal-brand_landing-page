@@ -12,6 +12,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import Section from "@/components/Section";
 
 export default function ExperiencePage() {
   const t = useTranslations("experience");
@@ -22,12 +23,7 @@ export default function ExperiencePage() {
   );
 
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b dark:from-gray-800 dark:to-gray-900 dark:bg-gray-900 py-32"
-    >
+    <Section>
       <div className="container mx-auto px-6">
         {/* Title */}
         <h1 className="text-5xl font-bold text-gray-800 dark:text-gray-50 mb-8 text-center">
@@ -120,6 +116,6 @@ export default function ExperiencePage() {
           )}
         </VerticalTimeline>
       </div>
-    </motion.section>
+    </Section>
   );
 }

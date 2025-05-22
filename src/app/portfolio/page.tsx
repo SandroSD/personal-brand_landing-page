@@ -1,12 +1,13 @@
 "use client";
 
+import Section from "@/components/Section";
 import { useTranslations } from "next-intl";
 
 export default function PortfolioPage() {
   const t = useTranslations("portfolio");
 
   return (
-    <section className="h-screen flex flex-col justify-center items-center bg-white dark:bg-gray-900 pt-16">
+    <Section>
       <div className="container mx-auto px-6 text-center">
         {/* Title */}
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-50 mb-8">
@@ -23,6 +24,6 @@ export default function PortfolioPage() {
           {t("comingSoon")}
         </div>
       </div>
-    </section>
+    </Section>
   );
 }

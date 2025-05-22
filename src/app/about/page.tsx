@@ -4,17 +4,13 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 
 import Skills from "@/components/Skills";
+import Section from "@/components/Section";
 
 export default function AboutPage() {
   const t = useTranslations("about");
 
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="h-auto flex flex-col justify-center items-center bg-white dark:bg-gray-900 pt-32"
-    >
+    <Section>
       <div className="container mx-auto px-6">
         {/* Title */}
         <h1 className="text-5xl font-bold text-gray-800 dark:text-gray-50 mb-8 text-center">
@@ -62,6 +58,6 @@ export default function AboutPage() {
         </h2>
         <Skills skills={t.raw("skills")} />
       </div>
-    </motion.section>
+    </Section>
   );
 }

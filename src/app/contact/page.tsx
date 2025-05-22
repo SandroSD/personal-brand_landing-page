@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 //import { useState } from "react";
 import { motion } from "framer-motion";
+import Section from "@/components/Section";
 
 export default function ContactPage() {
   const t = useTranslations("contact");
@@ -27,12 +28,7 @@ export default function ContactPage() {
   };*/
 
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-sky-50 to-white dark:from-gray-800 dark:to-gray-900 py-32"
-    >
+    <Section>
       <div className="container mx-auto px-6">
         {/* Title */}
         <h1 className="text-5xl font-bold text-gray-800 dark:text-gray-50 mb-8 text-center">
@@ -180,6 +176,6 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
-    </motion.section>
+    </Section>
   );
 }
