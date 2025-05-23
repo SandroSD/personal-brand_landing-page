@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-import { motion } from "framer-motion";
+//import { motion } from "framer-motion";
 
 import {
   VerticalTimeline,
@@ -47,10 +47,7 @@ export default function ExperiencePage() {
                 <Image
                   src={experience.logo}
                   alt={experience.company}
-                  loader={({ src }) => {
-                    console.log("SRC: ", src);
-                    return src;
-                  }}
+                  loader={({ src }) => src}
                   unoptimized
                   width={50}
                   height={50}

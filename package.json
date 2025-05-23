@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@radix-ui/react-tooltip": "^1.2.6",
     "@tailwindcss/postcss": "^4.0.0",
     "class-variance-authority": "^0.7.1",
@@ -38,6 +39,7 @@
   },
   "pnpm": {
     "onlyBuiltDependencies": [
+      "react-vertical-timeline-component",
       "sharp"
     ]
   }

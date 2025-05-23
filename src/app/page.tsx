@@ -23,6 +23,8 @@ export default function Home() {
           <Image
             src="/me.png"
             alt="Sandro Dezerio"
+            loader={({ src }) => src}
+            unoptimized
             width={200}
             height={200}
             className="w-full h-full object-cover"
