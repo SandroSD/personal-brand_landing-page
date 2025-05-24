@@ -47,13 +47,13 @@ export default function ContactPage() {
         </h1>
 
         {/* Description */}
-        <p className="text-xl text-gray-600 dark:text-gray-300 mb-12 text-center max-w-3xl mx-auto">
+        <p className="text-xl font-semibold text-gray-600 dark:text-gray-300 mb-12 text-center max-w-3xl mx-auto">
           {t("description")}
         </p>
 
         <div className="max-w-2xl mx-auto rounded-lg  p-2">
           {/* Contact Form */}
-          <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+          <div className="bg-white dark:bg-gray-950/50 p-8 rounded-2xl shadow-lg">
             <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-50 mb-6">
               {t("form.title")}
             </h2>

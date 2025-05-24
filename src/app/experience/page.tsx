@@ -94,9 +94,9 @@ export default function ExperiencePage() {
                   contentArrowStyle={{
                     borderRight: "1.5em solid rgb(16, 24, 40)",
                   }}
-                  iconOnClick={() => {
+                  /*iconOnClick={() => {
                     console.log("object");
-                  }}
+                  }}*/
                 >
                   <h3 className="vertical-timeline-element-title text-2xl font-bold text-gray-800 dark:text-gray-500">
                     {experience.title}

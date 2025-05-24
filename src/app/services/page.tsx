@@ -42,7 +42,7 @@ export default function ServicesPage() {
                   transition={{ duration: 0.4 }}
                   className={`${
                     index === 0 && "col-span-1 md:col-span-2 text-center"
-                  } bg-slate-800 p-6 rounded-lg shadow-md`}
+                  } bg-gray-950/50 p-6 rounded-lg shadow-md`}
                   //"
                 >
                   <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-50 mb-4">

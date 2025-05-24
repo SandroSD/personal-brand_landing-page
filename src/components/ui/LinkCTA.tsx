@@ -7,7 +7,7 @@ const LinkCTA = () => {
   return (
     <Link
       href="/contact"
-      className="inline-block bg-sky-400 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition duration-300 transform hover:scale-105"
+      className="inline-block dark:bg-gray-950/50 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition duration-300 transform hover:scale-105"
     >
       {t("cta")}
     </Link>

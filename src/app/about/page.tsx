@@ -18,7 +18,7 @@ export default function AboutPage() {
         </h1>
 
         {/* Description */}
-        <div className="text-xl text-gray-600 dark:text-gray-300 text-center max-w-8xl mx-auto">
+        <div className="text-xl font-semibold text-gray-600 dark:text-gray-300 text-center max-w-8xl mx-auto">
           <motion.p
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}

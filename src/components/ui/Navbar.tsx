@@ -37,7 +37,7 @@ export default function Navbar() {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <nav className="bg-white dark:bg-gray-900 shadow-md py-4 fixed w-full top-0 z-50">
+    <nav className="bg-white dark:bg-gray-950/50 shadow-md py-4 fixed w-full top-0 z-50">
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Links to Sections */}
         <div className="flex items-center gap-4">
@@ -95,16 +95,16 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <button
             onClick={toggleLanguage}
-            className="p-2 rounded-lg bg-gray-200 dark:bg-gray-700"
+            className="p-2 font-bold rounded-lg bg-gray-200 dark:bg-gray-700"
           >
             {t("toggleLanguage")}
           </button>
-          <button
+          {/*<button
             onClick={() => setDarkMode(!darkMode)}
             className="p-2 rounded-lg bg-gray-200 dark:bg-gray-700"
           >
             {darkMode ? "🌙" : "☀️"}
-          </button>
+          </button>*/}
         </div>
       </div>
     </nav>
