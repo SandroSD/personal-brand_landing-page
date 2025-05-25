@@ -143,7 +143,45 @@
     ]
   },
   "experience": {
-    "title": "Experiencia"
+    "title": "Experiencia",
+    "jobs": [
+      {
+        "title": "React and Node Developer",
+        "logo": "/experience/distillery.png",
+        "company": "Distillery",
+        "location": "Buenos Aires, Argentina",
+        "from": "06/2022",
+        "to": "03/2025",
+        "site": "https://distillery.com/"
+      },
+      {
+        "title": "Fullstack Developer",
+        "logo": "/experience/fpay.jpg",
+        "company": "FPay",
+        "location": "Buenos Aires, Argentina",
+        "from": "10/2021",
+        "to": "06/2022",
+        "site": "https://www.falabella.com/falabella-cl/page/F-Pay"
+      },
+      {
+        "title": "Fullstack Developer",
+        "logo": "/experience/soulit.png",
+        "company": "Soul IT Solutions - IT Services and Consulting",
+        "location": "Buenos Aires, Argentina",
+        "from": "05/2018",
+        "to": "10/2021",
+        "site": "https://www.soulit.io/"
+      },
+      {
+        "title": "Web Programmer and Fullstack Developer",
+        "logo": "/experience/union-personal.svg",
+        "company": "Unión Personal - Hospitals and Healthcare",
+        "location": "Buenos Aires, Argentina",
+        "from": "06/2017",
+        "to": "03/2018",
+        "site": "https://www.unionpersonal.com.ar/"
+      }
+    ]
   },
   "portfolio": {
     "title": "Portafolio",
@@ -152,19 +190,21 @@
   },
   "contact": {
     "title": "Contáctame",
-    "description": "¿Tienes una pregunta o quieres trabajar juntos? ¡No dudes en contactarme!",
+    "description": "¡Estoy entusiasmado por conectar con usted! Complete el siguiente formulario y me pondré en contacto a la brevedad.",
     "form": {
       "title": "Envíame un Mensaje",
-      "name": "Nombre",
-      "email": "Correo Electrónico",
-      "message": "Mensaje",
+      "field_fullname": "Nombre Completo",
+      "field_email": "Correo Electrónico",
+      "field_subject": "Asunto",
+      "field_message": "Mensaje",
+      "field_phonenumber": "Número de Teléfono",
+      "field_contactmethod": "Método de Contacto",
       "submit": "Enviar Mensaje"
     },
     "contactInfo": {
       "title": "Conectemos",
       "email": "Correo Electrónico",
-      "socialMedia": "Sígueme",
-      "emailLink": "tu.correo@ejemplo.com",
+      "emailLink": "tu.email@ejemplo.com",
       "linkedin": "LinkedIn",
       "github": "GitHub",
       "twitter": "Twitter"
