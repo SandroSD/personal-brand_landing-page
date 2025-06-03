@@ -1,11 +1,30 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+import type { Metadata } from "next";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+
+import { motion } from "framer-motion";
 
 import LinkCTA from "@/components/ui/LinkCTA";
 import Section from "@/components/Section";
+
+export const metadata: Metadata = {
+  title: "Home | Sandro Dezerio - Backend & Full-Stack Javascript Developer",
+  description:
+    "Welcome to the portfolio of Sandro Dezerio, an experienced Backend and Full-Stack Developer in Medellín, Colombia. Specializing in scalable, high-performance cloud-native solutions with Node.js, NestJS, AWS, and modern JavaScript frameworks.",
+  openGraph: {
+    title: "Home | Sandro Dezerio - Backend & Full-Stack Javascript Developer",
+    description:
+      "Explore the work and expertise of Sandro Dezerio: scalable backend systems, cloud-native architecture, and technical leadership.",
+    url: "https://sandrodezerio.dev/",
+  },
+  twitter: {
+    title: "Home | Sandro Dezerio - Backend & Full-Stack Javascript Developer",
+    description:
+      "Portfolio of Sandro Dezerio: scalable backend systems, cloud-native architecture, and technical leadership.",
+  },
+};
 
 export default function Home() {
   const t = useTranslations("hero");

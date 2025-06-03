@@ -1,10 +1,32 @@
 "use client";
 
+import type { Metadata } from "next";
+
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 
 import LinkCTA from "@/components/ui/LinkCTA";
 import Section from "@/components/Section";
+
+export const metadata = {
+  title:
+    "Services | Sandro Dezerio - Backend & Full-Stack Javascript Developer",
+  description:
+    "Professional services by Sandro Dezerio: backend & full-stack development, API design, architecture consulting, technical mentorship, and custom software solutions for businesses.",
+  openGraph: {
+    title:
+      "Services | Sandro Dezerio - Backend & Full-Stack Javascript Developer",
+    description:
+      "Backend & full-stack development, API design, architecture consulting, and more by Sandro Dezerio.",
+    url: "https://sandrodezerio.dev/services",
+  },
+  twitter: {
+    title:
+      "Services | Sandro Dezerio - Backend & Full-Stack Javascript Developer",
+    description:
+      "Backend & full-stack development, API design, architecture consulting, and more by Sandro Dezerio.",
+  },
+};
 
 export default function ServicesPage() {
   const t = useTranslations("services");

@@ -1,5 +1,7 @@
 "use client";
 
+import type { Metadata } from "next";
+
 import { useTranslations } from "next-intl";
 //import { useState } from "react";
 //import { motion } from "framer-motion";
@@ -10,6 +12,25 @@ import { FaGithub } from "react-icons/fa";
 import { useRef, useState } from "react";
 import { validateAndSendEmail } from "@/utils/sendMail";
 //import { FaTwitter } from "react-icons/fa";
+
+export const metadata = {
+  title: "Contact | Sandro Dezerio - Backend & Full-Stack Javascript Developer",
+  description:
+    "Contact Sandro Dezerio for project inquiries, collaborations, or technical consultations. Based in Medellín, Colombia, available for remote and international work.",
+  openGraph: {
+    title:
+      "Contact | Sandro Dezerio - Backend & Full-Stack Javascript Developer",
+    description:
+      "Get in touch with Sandro Dezerio for backend, full-stack, and cloud-native development.",
+    url: "https://sandrodezerio.dev/contact",
+  },
+  twitter: {
+    title:
+      "Contact | Sandro Dezerio - Backend & Full-Stack Javascript Developer",
+    description:
+      "Get in touch with Sandro Dezerio for backend, full-stack, and cloud-native development.",
+  },
+};
 
 export default function ContactPage() {
   const t = useTranslations("contact");

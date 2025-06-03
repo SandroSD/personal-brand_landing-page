@@ -1,10 +1,29 @@
 "use client";
 
+import type { Metadata } from "next";
+
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 
 import Skills from "@/components/Skills";
 import Section from "@/components/Section";
+
+export const metadata: Metadata = {
+  title: "About | Sandro Dezerio - Backend & Full-Stack Javascript Developer",
+  description:
+    "Learn more about Sandro Dezerio: a results-driven Backend Engineer with 5+ years of experience in cloud-native solutions, technical mentorship, and delivering robust software for global teams.",
+  openGraph: {
+    title: "About | Sandro Dezerio - Backend & Full-Stack Javascript Developer",
+    description:
+      "Discover Sandro Dezerio's journey, technical skills, and professional philosophy.",
+    url: "https://sandrodezerio.dev/about",
+  },
+  twitter: {
+    title: "About | Sandro Dezerio - Backend & Full-Stack Javascript Developer",
+    description:
+      "Discover Sandro Dezerio's journey, technical skills, and professional philosophy.",
+  },
+};
 
 export default function AboutPage() {
   const t = useTranslations("about");

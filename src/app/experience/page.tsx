@@ -1,5 +1,7 @@
 "use client";
 
+import type { Metadata } from "next";
+
 import { useState } from "react";
 
 import { useTranslations } from "next-intl";
@@ -13,6 +15,26 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import Section from "@/components/Section";
+
+export const metadata: Metadata = {
+  title:
+    "Experience | Sandro Dezerio - Backend & Full-Stack Javascript Developer",
+  description:
+    "Explore Sandro Dezerio's professional experience: impactful roles at Distillery, FPay, SouIIT Solutions, and Union Personal. Proven results in backend, full-stack, and cloud-native development.",
+  openGraph: {
+    title:
+      "Experience | Sandro Dezerio - Backend & Full-Stack Javascript Developer",
+    description:
+      "Detailed work history and achievements in software engineering, cloud architecture, and team leadership.",
+    url: "https://sandrodezerio.dev/experience",
+  },
+  twitter: {
+    title:
+      "Experience | Sandro Dezerio - Backend & Full-Stack Javascript Developer",
+    description:
+      "Detailed work history and achievements in software engineering, cloud architecture, and team leadership.",
+  },
+};
 
 export default function ExperiencePage() {
   const t = useTranslations("experience");

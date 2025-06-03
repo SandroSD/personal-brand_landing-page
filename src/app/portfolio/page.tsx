@@ -1,7 +1,29 @@
 "use client";
 
+import type { Metadata } from "next";
+
 import Section from "@/components/Section";
 import { useTranslations } from "next-intl";
+
+export const metadata: Metadata = {
+  title:
+    "Portfolio | Sandro Dezerio - Backend & Full-Stack Javascript Developer",
+  description:
+    "A showcase of Sandro Dezerio's projects: scalable APIs, cloud-native platforms, and robust web applications built with Node.js, NestJS, React, and AWS.",
+  openGraph: {
+    title:
+      "Portfolio | Sandro Dezerio - Backend & Full-Stack Javascript Developer",
+    description:
+      "Explore selected projects and technical solutions delivered by Sandro Dezerio.",
+    url: "https://sandrodezerio.dev/portfolio",
+  },
+  twitter: {
+    title:
+      "Portfolio | Sandro Dezerio - Backend & Full-Stack Javascript Developer",
+    description:
+      "Explore selected projects and technical solutions delivered by Sandro Dezerio.",
+  },
+};
 
 export default function PortfolioPage() {
   const t = useTranslations("portfolio");
