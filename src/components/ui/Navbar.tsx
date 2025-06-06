@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useTransition } from "react";
+import { useState /*, useEffect*/, useTransition } from "react";
 
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
@@ -14,19 +14,20 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const [isPending, startTransition] = useTransition();
-  const [darkMode, setDarkMode] = useState(false);
+  //const [darkMode, setDarkMode] = useState(false);
   const [locale, setLocale] = useState("en");
 
-  useEffect(() => {
+  /*useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
     }
-  }, [darkMode]);
+  }, [darkMode]);*/
 
   const toggleLanguage = () => {
     const newLocale: Locale = locale === "en" ? "es" : "en";
+    console.log({ newLocale });
     setLocale(newLocale);
     startTransition(() => {
       setUserLocale(newLocale);

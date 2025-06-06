@@ -1,12 +1,10 @@
-"use client";
-
 import type { Metadata } from "next";
 
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
 
 import Skills from "@/components/Skills";
 import Section from "@/components/Section";
+import MP from "@/components/motion/MP";
 
 export const metadata: Metadata = {
   title: "About | Sandro Dezerio - Backend & Full-Stack Javascript Developer",
@@ -38,38 +36,40 @@ export default function AboutPage() {
 
         {/* Description */}
         <div className="text-xl font-semibold text-gray-600 dark:text-gray-300 text-center max-w-8xl mx-auto">
-          <motion.p
+          <MP
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="mb-12"
+            customClass="mb-12"
           >
             {t("description.p1")}
-          </motion.p>
-          <motion.p
+          </MP>
+
+          <MP
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="mb-12"
+            customClass="mb-12"
           >
             {t("description.p2")}
-          </motion.p>
-          <motion.p
+          </MP>
+
+          <MP
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9 }}
-            className="mb-12"
+            customClass="mb-12"
           >
             {t("description.p3")}
-          </motion.p>
-          <motion.p
+          </MP>
+          <MP
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.1 }}
-            className="mb-12"
+            customClass="mb-12"
           >
             {t("description.p4")}
-          </motion.p>
+          </MP>
         </div>
 
         <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-50 mb-6 text-center">

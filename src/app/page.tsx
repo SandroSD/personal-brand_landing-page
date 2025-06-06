@@ -1,13 +1,14 @@
-"use client";
-
 import type { Metadata } from "next";
-import Image from "next/image";
-import { useTranslations } from "next-intl";
 
-import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 import LinkCTA from "@/components/ui/LinkCTA";
 import Section from "@/components/Section";
+import CustomImage from "../components/CustomImage";
+import MDiv from "@/components/motion/MDiv";
+import MH1 from "@/components/motion/MH1";
+import MH2 from "../components/motion/MH2";
+import MP from "@/components/motion/MP";
 
 export const metadata: Metadata = {
   title: "Home | Sandro Dezerio - Backend & Full-Stack Javascript Developer",
@@ -33,60 +34,55 @@ export default function Home() {
     <Section>
       <div className="container mx-auto px-6 text-center">
         {/* Profile Photo with Animation */}
-        <motion.div
+
+        <MDiv
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="w-64 h-64 mx-auto mb-16 overflow-hidden rounded-full border-4 border-sky-400 dark:border-blue-800 shadow-lg"
+          customClass="w-64 h-64 mx-auto mb-16 overflow-hidden rounded-full border-4 border-sky-400 dark:border-blue-800 shadow-lg"
         >
-          <Image
-            src="/me.png"
-            alt="Sandro Dezerio"
-            loader={({ src }) => src}
-            unoptimized
-            width={200}
-            height={200}
-            className="w-full h-full object-cover"
-          />
-        </motion.div>
+          <CustomImage />
+        </MDiv>
 
         {/* Title */}
-        <motion.h1
+
+        <MH1
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-6xl font-bold text-gray-800 dark:text-gray-50"
+          customClass="text-6xl font-bold text-gray-800 dark:text-gray-50"
         >
           {t("title")}
-        </motion.h1>
+        </MH1>
 
-        <motion.h2
+        <MH2
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="text-2xl text-gray-600 dark:text-gray-300 my-8"
+          customClass="text-2xl text-gray-600 dark:text-gray-300 my-8"
         >
           {t("subtitle")}
-        </motion.h2>
+        </MH2>
 
         {/* Subtitle */}
-        <motion.p
+        <MP
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="text-xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto"
+          customClass="text-xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto"
         >
           {t("description")}
-        </motion.p>
+        </MP>
 
         {/* Call-to-Action Button */}
-        <motion.div
+        <MDiv
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
+          customClass=""
         >
           <LinkCTA />
-        </motion.div>
+        </MDiv>
       </div>
     </Section>
   );

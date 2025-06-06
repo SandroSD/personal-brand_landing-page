@@ -1,14 +1,12 @@
-"use client";
-
 import type { Metadata } from "next";
 
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
 
 import LinkCTA from "@/components/ui/LinkCTA";
 import Section from "@/components/Section";
+import MDiv from "@/components/motion/MDiv";
 
-export const metadata = {
+export const metadata: Metadata = {
   title:
     "Services | Sandro Dezerio - Backend & Full-Stack Javascript Developer",
   description:
@@ -53,7 +51,7 @@ export default function ServicesPage() {
                 service: { title: string; description: string },
                 index: number,
               ) => (
-                <motion.div
+                <MDiv
                   key={index}
                   whileHover={{
                     scale: 1.03,
@@ -62,10 +60,9 @@ export default function ServicesPage() {
                   initial={{ opacity: 0, y: 40 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4 }}
-                  className={`${
+                  customClass={`${
                     index === 0 && "col-span-1 md:col-span-2 text-center"
                   } bg-gray-950/50 p-6 rounded-lg shadow-md`}
-                  //"
                 >
                   <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-50 mb-4">
                     {service.title}
@@ -73,18 +70,18 @@ export default function ServicesPage() {
                   <p className="text-gray-600 dark:text-gray-300">
                     {service.description}
                   </p>
-                </motion.div>
+                </MDiv>
               ),
             )}
         </div>
-        <motion.div
+        <MDiv
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="mt-12 flex justify-center"
+          customClass="mt-12 flex justify-center"
         >
           <LinkCTA />
-        </motion.div>
+        </MDiv>
       </div>
     </Section>
   );
